@@ -15,3 +15,4 @@
 | 6 | [intFact](intFact.py)|
 | 7 | [Segment](Segment.py)|
 | 8 | [Square](Square.py)|
+| 9 | [Matrix](Matrix.py)|
