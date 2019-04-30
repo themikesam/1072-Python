@@ -21,9 +21,13 @@ def myqueen(n, r, col, up, down) :
     for c in range(n) : # for each col c
         # check if can put on
         # if col[c]==False and up[r+c]==False and down[r-c+n-1]==False:
+        # 如果直線和兩條斜線都可以放
         if col[c] and up[r+c] and down[r-c+n-1]:
+            # 放上去後這三條線都不能放了
             col[c]=up[r+c]=down[r-c+n-1]=False
+            # 移交給下一個皇后
             count += myqueen(n, r+1, col, up, down)
+            # 移除皇后後並重設這三條線都可以放
             col[c]=up[r+c]=down[r-c+n-1]=True
     return count
 
