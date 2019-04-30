@@ -16,3 +16,4 @@
 | 7 | [Segment](Segment.py)|
 | 8 | [Square](Square.py)|
 | 9 | [Matrix](Matrix.py)|
+| 9.1 | [Queen](Queen.py) |
